@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Convert F degrees to C degrees</title>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<script>
+		var entry;
+		var temp;
+
+		do {
+			entry = prompt("Enter degrees in Fahrenheit\n" +
+			               "Or enter 999 to end entries", 999);
+			entry = parseInt(entry);
+			
+			if (entry != 999 || !NaN(entry)){
+			
+			temp = (entry-32)*.5556;
+
+			alert("Fahrenheit  = " + entry + "\n"
+			+ "Celsius = " + temp);
+			
+			}
+			
+		}
+		while (entry != 999);
+	</script>
+</head>
+<body>
+<section>
+    <h1>This page is displayed after the JavaScript is executed</h1>
+</section>
+</body>
+</html>
